@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PSTI FEST 2025</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/icons/logo.png">
+</head>
+<body class="auth-body">
+    <!-- Enhanced Futuristic Background -->
+    <div class="auth-background" style="display:none;">
+        <!-- Matrix Rain Effect -->
+        <div class="matrix-rain">
+            <canvas id="matrixCanvas"></canvas>
+        </div>
+        
+        <!-- Geometric Shapes -->
+        <div class="geometric-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        
+        <!-- Circuit Board Pattern -->
+        <div class="circuit-board">
+            <div class="circuit-line horizontal line-1"></div>
+            <div class="circuit-line horizontal line-2"></div>
+            <div class="circuit-line horizontal line-3"></div>
+            <div class="circuit-line vertical line-4"></div>
+            <div class="circuit-line vertical line-5"></div>
+            <div class="circuit-line vertical line-6"></div>
+            <div class="circuit-node node-1"></div>
+            <div class="circuit-node node-2"></div>
+            <div class="circuit-node node-3"></div>
+            <div class="circuit-node node-4"></div>
+            <div class="circuit-node node-5"></div>
+            <div class="circuit-node node-6"></div>
+        </div>
+        
+        <!-- Floating Particles -->
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Energy Waves -->
+        <div class="energy-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        
+        <!-- Neural Network -->
+        <div class="neural-network">
+            <div class="neural-node node-1"></div>
+            <div class="neural-node node-2"></div>
+            <div class="neural-node node-3"></div>
+            <div class="neural-node node-4"></div>
+            <div class="neural-connection connection-1"></div>
+            <div class="neural-connection connection-2"></div>
+            <div class="neural-connection connection-3"></div>
+        </div>
+        
+        <!-- Holographic Grid -->
+        <div class="holographic-grid">
+            <div class="grid-line horizontal"></div>
+            <div class="grid-line horizontal"></div>
+            <div class="grid-line horizontal"></div>
+            <div class="grid-line vertical"></div>
+            <div class="grid-line vertical"></div>
+            <div class="grid-line vertical"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="auth-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/icons/logo.png" alt="PSTI FEST Logo" class="logo-img">
+                <span class="logo-text">PSTI FEST 2025</span>
+                <div class="logo-glow"></div>
+                <div class="logo-pulse"></div>
+            </a>
+            <a href="../index.html" class="back-home futuristic-link">
+                <div class="link-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </div>
+                <span>Kembali ke Beranda</span>
+                <div class="link-underline"></div>
+                <div class="link-particles">
+                    <span></span><span></span><span></span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="auth-container">
+        <div class="auth-content">
+            <!-- Left Side - Form -->
+            <div class="auth-form-section">
+                <div class="auth-form-container">
+                    <!-- Enhanced Header -->
+                    <div class="auth-header">
+                        <div class="header-ornament">
+                            <div class="ornament-line"></div>
+                            <div class="ornament-dot"></div>
+                            <div class="ornament-line"></div>
+                            <div class="ornament-glow"></div>
+                        </div>
+                        <h1 class="auth-title">
+                            <span class="title-main">Selamat Datang</span>
+                            <span class="title-sub">Kembali</span>
+                            <div class="title-glow"></div>
+                            <div class="title-particles">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </h1>
+                        <p class="auth-subtitle">
+                            Masuk ke portal PSTI FEST 2025
+                            <div class="subtitle-cursor"></div>
+                            <div class="subtitle-glow"></div>
+                        </p>
+                    </div>
+
+                    <!-- Enhanced Login Form -->
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <span class="label-text">Email atau Username</span>
+                                <div class="label-indicator"></div>
+                                <div class="label-glow"></div>
+                            </label>
+                            <div class="input-wrapper futuristic-input">
+                                <input type="text" id="email" name="email" class="form-input" placeholder="Masukkan email atau username" required>
+                                <div class="input-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="input-border">
+                                    <div class="border-line top"></div>
+                                    <div class="border-line right"></div>
+                                    <div class="border-line bottom"></div>
+                                    <div class="border-line left"></div>
+                                </div>
+                                <div class="input-glow"></div>
+                                <div class="input-scan-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">
+                                <span class="label-text">Password</span>
+                                <div class="label-indicator"></div>
+                                <div class="label-glow"></div>
+                            </label>
+                            <div class="input-wrapper futuristic-input">
+                                <input type="password" id="password" name="password" class="form-input" placeholder="Masukkan password" required>
+                                <div class="input-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <circle cx="12" cy="16" r="1"></circle>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </div>
+                                <button type="button" class="password-toggle futuristic-toggle" id="passwordToggle">
+                                    <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                                        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                                    </svg>
+                                    <div class="toggle-glow"></div>
+                                </button>
+                                <div class="input-border">
+                                    <div class="border-line top"></div>
+                                    <div class="border-line right"></div>
+                                    <div class="border-line bottom"></div>
+                                    <div class="border-line left"></div>
+                                </div>
+                                <div class="input-glow"></div>
+                                <div class="input-scan-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-wrapper futuristic-checkbox">
+                                <input type="checkbox" id="remember" name="remember">
+                                <span class="checkmark">
+                                    <div class="check-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                            <polyline points="20,6 9,17 4,12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="check-glow"></div>
+                                    <div class="check-scan"></div>
+                                </span>
+                                <span class="checkbox-text">Ingat saya</span>
+                            </label>
+                            <a href="forgot-password.html" class="forgot-link futuristic-link">
+                                <span>Lupa password?</span>
+                                <div class="link-underline"></div>
+                                <div class="link-glow"></div>
+                            </a>
+                        </div>
+
+                        <!-- Enhanced Submit Button -->
+                        <button type="submit" class="auth-btn auth-btn-primary futuristic-btn" id="loginBtn">
+                            <div class="btn-background">
+                                <div class="btn-layer layer-1"></div>
+                                <div class="btn-layer layer-2"></div>
+                                <div class="btn-layer layer-3"></div>
+                            </div>
+                            <span class="btn-content">
+                                <span class="btn-text">Masuk ke Portal</span>
+                                <div class="btn-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/>
+                                    </svg>
+                                </div>
+                            </span>
+                            <div class="btn-loader" style="display: none;">
+                                <div class="spinner">
+                                    <div class="spinner-ring"></div>
+                                    <div class="spinner-ring"></div>
+                                    <div class="spinner-ring"></div>
+                                </div>
+                            </div>
+                            <div class="btn-particles">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="btn-scan-line"></div>
+                            <div class="btn-energy-pulse"></div>
+                        </button>
+
+                        <!-- Enhanced Divider -->
+                        <div class="auth-divider" style="background:none; border:none; box-shadow:none; padding:0; margin: 0.5rem 0; display: flex; justify-content: center;">
+                            <span class="divider-text" style="background:none; padding:0; margin:0; border:none; box-shadow:none; font-size: 0.9rem; color: var(--text-gray);">atau</span>
+                        </div>
+
+                        <!-- Enhanced Social Login -->
+                        <div class="social-login">
+                            <button type="button" class="social-btn google-btn futuristic-social">
+                                <div class="social-background">
+                                    <div class="social-layer"></div>
+                                </div>
+                                <div class="social-content">
+                                    <div class="social-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                        </svg>
+                                    </div>
+                                    <span>Masuk dengan Google</span>
+                                </div>
+                                <div class="social-glow"></div>
+                                <div class="social-scan"></div>
+                            </button>
+                        </div>
+
+                        <!-- Enhanced Footer -->
+                        <div class="auth-footer">
+                            <p>Belum punya akun? 
+                                <a href="register.html" class="auth-link futuristic-link">
+                                    <span>Daftar sekarang</span>
+                                    <div class="link-underline"></div>
+                                    <div class="link-glow"></div>
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Side - Enhanced Visual -->
+            <div class="auth-visual-section">
+                <div class="auth-visual-content">
+                    <!-- Enhanced Visual Ornaments -->
+                    <div class="visual-ornaments">
+                        <div class="ornament-grid">
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                        </div>
+                        <div class="ornament-circles">
+                            <div class="circle circle-1"></div>
+                            <div class="circle circle-2"></div>
+                            <div class="circle circle-3"></div>
+                            <div class="circle circle-4"></div>
+                        </div>
+                        <div class="ornament-hexagons">
+                            <div class="hexagon hex-1"></div>
+                            <div class="hexagon hex-2"></div>
+                            <div class="hexagon hex-3"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced Visual Header -->
+                    <div class="visual-header">
+                        <h2 class="visual-title">
+                            <span class="title-line-1">Bergabung dengan</span>
+                            <span class="title-line-2">Kompetisi Teknologi</span>
+                            <span class="title-line-3">Terdepan</span>
+                            <div class="title-highlight"></div>
+                            <div class="title-energy"></div>
+                        </h2>
+                        <p class="visual-subtitle">
+                            Tunjukkan kemampuan terbaikmu dan raih prestasi gemilang
+                            <div class="subtitle-glow"></div>
+                            <div class="subtitle-particles">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <!-- Enhanced Features List -->
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"></path>
+                                    <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                    <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                                    <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                                    <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                                </svg>
+                                <div class="icon-glow"></div>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="feature-text">
+                                <h3>3 Kategori Kompetisi</h3>
+                                <p>Ideathon, Smart Village Awards, dan Lomba Badminton</p>
+                            </div>
+                            <div class="feature-line"></div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <div class="icon-glow"></div>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Hadiah Menarik</h3>
+                                <p>Total hadiah puluhan juta rupiah untuk para pemenang</p>
+                            </div>
+                            <div class="feature-line"></div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="8.5" cy="7" r="4"/>
+                                    <path d="M20 8v6M23 11h-6"/>
+                                </svg>
+                                <div class="icon-glow"></div>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Networking</h3>
+                                <p>Bertemu dengan para ahli teknologi dan sesama peserta</p>
+                            </div>
+                            <div class="feature-line"></div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <div class="icon-glow"></div>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="feature-text">
+                                <h3>8 Hari Acara</h3>
+                                <p>Rangkaian acara komprehensif selama 8 hari penuh</p>
+                            </div>
+                            <div class="feature-line"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced Stats -->
+                    <div class="visual-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Peserta</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Juta Hadiah</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Hari Acara</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/auth.js"></script>
+    <script>
+        // Enhanced Matrix Rain Effect
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        const matrixArray = matrix.split("");
+
+        const fontSize = 10;
+        const columns = canvas.width / fontSize;
+
+        const drops = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.04)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#06b6d4';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 35);
+
+        // Resize canvas on window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
+

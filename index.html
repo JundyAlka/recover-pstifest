@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSTI FEST 2025 - Technology Driven Society Empowerment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .nav-link {
+            color: #06b6d4 !important;
+            font-weight: 700 !important;
+            text-shadow: 0 0 8px #06b6d4 !important;
+        }
+        .nav-link:hover {
+            color: #ffffff !important;
+            text-shadow: 0 0 12px #ffffff !important;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/icons/logo.png" alt="PSTI FEST Logo" class="logo-img">
+                <span class="logo-text">PSTI FEST 2025</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#beranda" class="nav-link" style="color:#06b6d4 !important;">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kompetisi" class="nav-link" style="color:#06b6d4 !important;">Kompetisi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link" style="color:#06b6d4 !important;">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#seminar" class="nav-link" style="color:#06b6d4 !important;">Seminar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#guidebook" class="nav-link" style="color:#06b6d4 !important;">Guidebook</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tentang" class="nav-link" style="color:#06b6d4 !important;">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link info-btn" style="color:#06b6d4 !important;" onclick="openModal('infoModal')">Info Acara</a>
+                </li>
+            </ul>
+            <!-- Login button moved to separate container on far right -->
+            <div class="nav-actions">
+                <a href="pages/login.html" class="nav-link login-btn futuristic-login">
+                    <div class="login-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                            <polyline points="10,17 15,12 10,7"/>
+                            <line x1="15" y1="12" x2="3" y2="12"/>
+                        </svg>
+                    </div>
+                    <span>Login</span>
+                    <div class="login-glow"></div>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mentor Section - Full Screen Hero -->
+    <section id="mentor" class="mentor-section-fullscreen">
+        <div class="mentor-background-effects">
+            <div class="cosmic-particles">
+                <div class="particle cosmic-1"></div>
+                <div class="particle cosmic-2"></div>
+                <div class="particle cosmic-3"></div>
+                <div class="particle cosmic-4"></div>
+                <div class="particle cosmic-5"></div>
+                <div class="particle cosmic-6"></div>
+            </div>
+            <div class="energy-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+            <div class="neural-network">
+                <div class="neural-node node-1"></div>
+                <div class="neural-node node-2"></div>
+                <div class="neural-node node-3"></div>
+                <div class="neural-node node-4"></div>
+                <div class="neural-connection connection-1"></div>
+                <div class="neural-connection connection-2"></div>
+                <div class="neural-connection connection-3"></div>
+            </div>
+        </div>
+        
+        <div class="mentor-container-fullscreen">
+            <div class="mentor-grid-enhanced">
+                <!-- Left Mentor Card -->
+                <div class="mentor-card-enhanced mentor-left">
+                    <div class="mentor-card-background">
+                        <div class="card-glow-effect"></div>
+                        <div class="card-scan-lines"></div>
+                    </div>
+                    <div class="mentor-avatar-container">
+                        <div class="avatar-frame">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Mentor 1" class="mentor-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-ring ring-1"></div>
+                            <div class="avatar-ring ring-2"></div>
+                        </div>
+                        <div class="mentor-status">
+                            <div class="status-indicator"></div>
+                            <span>AI Expert</span>
+                        </div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3 class="mentor-name">Rubyanto Prabowo, S.Pd</h3>
+                        <p class="mentor-title">CEO Edu Karya Gemilang Jaya</p>
+                        <div class="mentor-expertise-tag">
+                            <span>AI & Smart Village Expert</span>
+                            <div class="tag-glow"></div>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentor-social">
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Center Info Card -->
+                <div class="psti-fest-info-enhanced">
+                    <div class="info-background">
+                        <div class="holographic-overlay"></div>
+                    </div>
+                    
+                    <div class="fest-header">
+                        <div class="fest-logo-container">
+                            <img src="assets/icons/logo.png" alt="PSTI Logo" class="fest-logo">
+                            <div class="logo-pulse"></div>
+                        </div>
+                        <h1 class="fest-title-enhanced">
+                            <span class="title-main">PSTI FEST</span>
+                            <span class="title-year">2025</span>
+                            <div class="title-effects">
+                                <div class="title-glow"></div>
+                                <div class="title-particles">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </h1>
+                    </div>
+
+                    <div class="fest-content">
+                        <p class="fest-theme-enhanced">Technology Driven Society Empowerment</p>
+                        <p class="fest-description-enhanced">
+                            Memperingati Milad ke-8 Program Studi Teknologi Informasi
+                            Universitas Muhammadiyah Purworejo
+                        </p>
+                        
+                        <div class="fest-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <span>3 Kompetisi Utama</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="8.5" cy="7" r="4"/>
+                                        <path d="M20 8v6M23 11h-6"/>
+                                    </svg>
+                                </div>
+                                <span>500+ Peserta</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <span>8 Hari Acara</span>
+                            </div>
+                        </div>
+
+                        <div class="fest-date-enhanced">
+                            <div class="date-container">
+                                <span class="date-text">22 - 29 Juli 2025</span>
+                                <div class="date-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="fest-actions-enhanced">
+                            <button class="action-btn primary-action" onclick="openModal('registrationModal')">
+                                <div class="btn-background">
+                                    <div class="btn-layer"></div>
+                                </div>
+                                <span class="btn-content">
+                                    <span class="btn-text">Daftar Sekarang</span>
+                                    <div class="btn-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <div class="btn-particles">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </button>
+                            
+                            <button class="action-btn secondary-action" onclick="openModal('infoModal')">
+                                <div class="btn-border">
+                                    <div class="border-line top"></div>
+                                    <div class="border-line right"></div>
+                                    <div class="border-line bottom"></div>
+                                    <div class="border-line left"></div>
+                                </div>
+                                <span class="btn-content">
+                                    <span class="btn-text">Info Lengkap</span>
+                                    <div class="btn-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M12 16v-4"/>
+                                            <path d="M12 8h.01"/>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <div class="btn-scan-line"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Mentor Card -->
+                <div class="mentor-card-enhanced mentor-right">
+                    <div class="mentor-card-background">
+                        <div class="card-glow-effect"></div>
+                        <div class="card-scan-lines"></div>
+                    </div>
+                    <div class="mentor-avatar-container">
+                        <div class="avatar-frame">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Mentor 2" class="mentor-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-ring ring-1"></div>
+                            <div class="avatar-ring ring-2"></div>
+                        </div>
+                        <div class="mentor-status">
+                            <div class="status-indicator"></div>
+                            <span>Education Leader</span>
+                        </div>
+                    </div>
+                    <div class="mentor-info">
+                        <h3 class="mentor-name">Dr. Teguh Wibowo, M.Pd</h3>
+                        <p class="mentor-title">Rektor UMP</p>
+                        <div class="mentor-expertise-tag">
+                            <span>Technology Education Leader</span>
+                            <div class="tag-glow"></div>
+                        </div>
+                        <div class="mentor-stats">
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Years Leadership</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentor-social">
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-background">
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-ornaments">
+                <div class="circuit-lines">
+                    <div class="circuit-line line-1"></div>
+                    <div class="circuit-line line-2"></div>
+                    <div class="circuit-line line-3"></div>
+                </div>
+                <div class="data-nodes">
+                    <div class="node node-1"></div>
+                    <div class="node node-2"></div>
+                    <div class="node node-3"></div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">PSTI FEST</span>
+                    <span class="year">2025</span>
+                    <div class="title-underline"></div>
+                </h1>
+                <p class="hero-subtitle">Technology Driven Society Empowerment</p>
+                <p class="hero-description">
+                    Bergabunglah dalam perayaan Milad ke-8 Program Studi Teknologi Informasi 
+                    dengan berbagai kompetisi, seminar, dan acara menarik yang menginspirasi inovasi teknologi.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#kompetisi" class="btn btn-primary futuristic-btn">
+                        <span class="btn-content">
+                            <span class="btn-text">Lihat Kompetisi</span>
+                            <div class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </div>
+                        </span>
+                        <div class="btn-glow"></div>
+                        <div class="btn-particles">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </a>
+                    <button class="btn btn-secondary futuristic-btn" onclick="openModal('timelineModal')">
+                        <span class="btn-content">
+                            <span class="btn-text">Timeline Acara</span>
+                            <div class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                        </span>
+                        <div class="btn-scan-line"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="trophy-container">
+                    <img src="assets/images/trophy_2.png" alt="Trophy" class="hero-trophy">
+                    <div class="trophy-glow"></div>
+                    <div class="hologram-effect"></div>
+                    <div class="energy-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Competitions Section -->
+    <section id="kompetisi" class="competitions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kompetisi PSTI FEST 2025</h2>
+                <p class="section-subtitle">Tunjukkan kemampuan terbaikmu dalam kompetisi yang menantang</p>
+            </div>
+            <div class="competitions-grid">
+                <div class="competition-card" data-category="ideathon">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Lomba Ideathon</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Kompetisi ide inovatif dengan tema "Mewujudkan Desa Cerdas Berbasis Teknologi dan Kearifan Lokal"
+                        </p>
+                        <ul class="card-features">
+                            <li>Tim maksimal 3 orang</li>
+                            <li>Proposal + Video Gagasan</li>
+                            <li>Presentasi 15 menit</li>
+                        </ul>
+                        <div class="card-prize">
+                            <span class="prize-label">Total Hadiah</span>
+                            <span class="prize-amount">Rp 2.250.000</span>
+                        </div>
+                        <div class="card-schedule">
+                            <span class="schedule-label">Tanggal Lomba</span>
+                            <span class="schedule-date">24 Juli 2025</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn" onclick="openRegistrationForm('ideathon')">Daftar Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="competition-card" data-category="smartvillage">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Smart Village Awards</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Penghargaan untuk desa-desa di Kabupaten Purworejo yang menerapkan teknologi inovatif
+                        </p>
+                        <ul class="card-features">
+                            <li>Khusus Desa di Purworejo</li>
+                            <li>Inovasi Teknologi Desa</li>
+                            <li>Dampak Sosial & Ekonomi</li>
+                        </ul>
+                        <div class="card-prize">
+                            <span class="prize-label">Penghargaan</span>
+                            <span class="prize-amount">Plakat & Publikasi</span>
+                        </div>
+                        <div class="card-schedule">
+                            <span class="schedule-label">Penganugerahan</span>
+                            <span class="schedule-date">29 Juli 2025</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn" onclick="openRegistrationForm('smartvillage')">Daftar Desa</button>
+                    </div>
+                </div>
+
+                <div class="competition-card" data-category="badminton">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Lomba Badminton Prodi TI</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Kompetisi olahraga badminton antar kelas Program Studi Teknologi Informasi
+                        </p>
+                        <ul class="card-features">
+                            <li>Mahasiswa Prodi TI</li>
+                            <li>Kategori Putra & Putri</li>
+                            <li>Sistem Turnamen</li>
+                        </ul>
+                        <div class="card-prize">
+                            <span class="prize-label">Total Hadiah</span>
+                            <span class="prize-amount">Rp 650.000</span>
+                        </div>
+                        <div class="card-schedule">
+                            <span class="schedule-label">Tanggal Lomba</span>
+                            <span class="schedule-date">26 Juli 2025</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn" onclick="openRegistrationForm('badminton')">Daftar Tim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Timeline PSTI FEST 2025</h2>
+                <p class="section-subtitle">Jadwal lengkap rangkaian acara</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">16 Jun</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Pembukaan Pendaftaran</h3>
+                        <p>Pendaftaran Smart Village Awards & Ideathon dibuka</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">22 Jul</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Seminar Nasional</h3>
+                        <p>Seminar AI dan Smart Village dengan narasumber expert</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">24 Jul</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Lomba Ideathon</h3>
+                        <p>Kompetisi ide inovatif Smart Village</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">26 Jul</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Lomba Badminton</h3>
+                        <p>Turnamen badminton mahasiswa Prodi TI</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">29 Jul</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Acara Puncak</h3>
+                        <p>Penganugerahan, pentas seni, dan penutupan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seminar Section -->
+    <section id="seminar" class="seminar">
+        <div class="container">
+            <div class="seminar-content">
+                <div class="seminar-text">
+                    <h2 class="section-title">Seminar Nasional</h2>
+                    <p class="section-subtitle">
+                        Seminar AI dan Smart Village dengan narasumber berpengalaman
+                    </p>
+                    <div class="seminar-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Narasumber Expert</h3>
+                                <p>Rubyanto Prabowo, S.Pd - CEO Edu Karya Gemilang Jaya</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Sertifikat Resmi</h3>
+                                <p>Sertifikat kehadiran dari Universitas Muhammadiyah Purworejo</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Networking Session</h3>
+                                <p>Kesempatan bertemu dengan akademisi dan praktisi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seminar-info">
+                        <div class="info-item">
+                            <strong>Tanggal:</strong> Selasa, 22 Juli 2025
+                        </div>
+                        <div class="info-item">
+                            <strong>Waktu:</strong> 08.00 - 11.30 WIB
+                        </div>
+                        <div class="info-item">
+                            <strong>Tempat:</strong> Auditorium Kasman Singodimedjo UMP
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="openRegistrationForm('seminar')">
+                        <span>Daftar Seminar</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+                <div class="seminar-visual">
+                    <div class="seminar-image">
+                        <img src="assets/images/geometric_1.jpg" alt="Seminar" class="seminar-bg">
+                        <div class="seminar-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guidebook Section -->
+    <section id="guidebook" class="guidebook">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Guidebook & Submission</h2>
+                <p class="section-subtitle">Panduan lengkap dan pengumpulan karya</p>
+            </div>
+            <div class="guidebook-grid">
+                <div class="guidebook-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Guidebook Ideathon</h3>
+                    <p>Panduan lengkap kompetisi Ideathon termasuk format proposal dan kriteria penilaian</p>
+                    <button class="btn btn-secondary" onclick="openModal('ideathonGuideModal')">
+                        <span>Lihat Panduan</span>
+                    </button>
+                </div>
+                <div class="guidebook-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3>Pengumpulan Karya</h3>
+                    <p>Upload proposal, video gagasan, dan dokumen pendukung untuk kompetisi Ideathon</p>
+                    <a href="https://bit.ly/PendaftaranLombaIdeathonPSTI" target="_blank" class="btn btn-primary">
+                        <span>Upload Karya</span>
+                    </a>
+                </div>
+                <div class="guidebook-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Smart Village Guide</h3>
+                    <p>Kriteria penilaian dan panduan pendaftaran Smart Village Awards</p>
+                    <button class="btn btn-secondary" onclick="openModal('smartVillageGuideModal')">
+                        <span>Lihat Kriteria</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Tentang PSTI FEST 2025</h2>
+                    <p class="about-description">
+                        PSTI FEST 2025 adalah perayaan Milad ke-8 Program Studi Teknologi Informasi 
+                        Universitas Muhammadiyah Purworejo dengan tema "Technology Driven Society Empowerment". 
+                        Acara ini bertujuan untuk mengembangkan talenta digital dan mempererat hubungan 
+                        antara akademisi, mahasiswa, dan masyarakat.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Peserta</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Kompetisi</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Hari Acara</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Seminar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="assets/images/trophy_1.jpg" alt="About PSTI FEST" class="about-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="trophy-achievement-container">
+                        <img src="assets/images/trophy-achievement.png" alt="Achievement Trophy" class="achievement-trophy">
+                        <div class="achievement-glow"></div>
+                        <div class="floating-particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                    <div class="achievement-id">
+                        <span class="id-text">PSTI FEST 2025</span>
+                        <div class="id-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Panduan Section -->
+                <div class="footer-section">
+                    <h3>Panduan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openModal('ideathonGuideModal')">Guide Book</a></li>
+                        <li><a href="#kompetisi">Kategori Perlombaan</a></li>
+                        <li><a href="#timeline">Timeline Acara</a></li>
+                        <li><a href="#seminar">Seminar Nasional</a></li>
+                        <li><a href="#guidebook">Submission Portal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <ul class="social-media-list">
+                        <li>ump_purworejo</li>
+                        <li>psti.umpwr</li>
+                        <li>himatekno_umpwr</li>
+                        <li>himatekno.official</li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Section -->
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <div class="contact-info">
+                        <p class="contact-question">Hubungi Panitia?</p>
+                        <a href="#" class="contact-btn">CONTACT PERSON</a>
+                        <p class="contact-email">Email: himatekno@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy;2024. | Designed By: Himatekno | DIGIFEST 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+    <!-- Modals will be added here -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Info Acara PSTI FEST 2025</h2>
+                <span class="close" onclick="closeModal('infoModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="info-section">
+                    <h3>Tentang PSTI FEST 2025</h3>
+                    <p>PSTI FEST 2025 adalah perayaan Milad ke-8 Program Studi Teknologi Informasi Universitas Muhammadiyah Purworejo dengan tema "Technology Driven Society Empowerment".</p>
+                </div>
+                <div class="info-section">
+                    <h3>Kompetisi</h3>
+                    <ul>
+                        <li>Lomba Ideathon - Total hadiah Rp 2.250.000</li>
+                        <li>Smart Village Awards - Penghargaan untuk desa inovatif</li>
+                        <li>Lomba Badminton Prodi TI - Total hadiah Rp 650.000</li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h3>Seminar Nasional</h3>
+                    <p>Seminar AI dan Smart Village dengan narasumber Rubyanto Prabowo, S.Pd (CEO Edu Karya Gemilang Jaya)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Pilih Kategori Pendaftaran</h2>
+                <span class="close" onclick="closeModal('registrationModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="registration-options">
+                    <div class="reg-option" onclick="openRegistrationForm('ideathon')">
+                        <h3>Lomba Ideathon</h3>
+                        <p>Kompetisi ide inovatif Smart Village</p>
+                        <p><strong>Hadiah:</strong> Rp 2.250.000</p>
+                    </div>
+                    <div class="reg-option" onclick="openRegistrationForm('smartvillage')">
+                        <h3>Smart Village Awards</h3>
+                        <p>Penghargaan desa inovatif</p>
+                        <p><strong>Khusus:</strong> Desa di Purworejo</p>
+                    </div>
+                    <div class="reg-option" onclick="openRegistrationForm('badminton')">
+                        <h3>Lomba Badminton</h3>
+                        <p>Turnamen badminton Prodi TI</p>
+                        <p><strong>Hadiah:</strong> Rp 650.000</p>
+                    </div>
+                    <div class="reg-option" onclick="openRegistrationForm('seminar')">
+                        <h3>Seminar Nasional</h3>
+                        <p>Seminar AI dan Smart Village</p>
+                        <p><strong>Biaya:</strong> Rp 15.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
