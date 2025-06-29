@@ -1,0 +1,28 @@
+/* Main CSS File - Imports all component styles */
+@import url('components/variables.css');
+@import url('components/reset.css');
+@import url('components/typography.css');
+@import url('components/navigation.css');
+@import url('components/buttons.css');
+@import url('components/mentor-section.css');
+@import url('components/cards.css');
+@import url('components/animations.css');
+@import url('components/footer.css');
+@import url('components/forms.css');
+@import url('components/timeline.css');
+@import url('components/responsive.css');
+
+/* Base styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--dark-navy);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}

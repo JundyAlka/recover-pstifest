@@ -1,0 +1,124 @@
+/* Mentor Section */
+.mentor-section {
+  padding: 100px 0 var(--spacing-3xl);
+  background: linear-gradient(135deg, var(--dark-navy) 0%, var(--dark-slate) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mentor-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.mentor-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+.mentor-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto var(--spacing-lg);
+  border: 3px solid var(--accent-cyan);
+}
+
+.mentor-card h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-light);
+}
+
+.mentor-card p {
+  color: var(--text-gray);
+  margin-bottom: var(--spacing-sm);
+}
+
+.mentor-expertise {
+  display: inline-block;
+  background: var(--gradient-accent);
+  color: var(--white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.psti-fest-info {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-2xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fest-title {
+  font-size: var(--font-size-5xl);
+  font-weight: 900;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-md);
+}
+
+.fest-theme {
+  font-size: var(--font-size-xl);
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.fest-description {
+  color: var(--text-gray);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.7;
+}
+
+.fest-date {
+  margin-bottom: var(--spacing-xl);
+}
+
+.date-text {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-light);
+  background: var(--gradient-secondary);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.mentor-actions {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Enhanced Full Screen Mentor Section */
+.mentor-section-fullscreen {
+  min-height: 100vh;
+  padding: 100px 0 var(--spacing-3xl);
+  background: linear-gradient(135deg, var(--dark-navy) 0%, var(--dark-slate) 50%, var(--dark-navy) 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
